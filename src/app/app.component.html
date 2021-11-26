@@ -1,0 +1,15 @@
+<h3>Array length: 10 to the power of:</h3>
+<input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="power1" />
+<br>
+<h3>Each number of the array to the power of:</h3>
+<input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="power2" />
+<br>
+<button (click)="getSumWebWorker()" type="button" class="btn btn-primary btn-lg btn-block">Get sum via Web Worker</button>
+<button (click)="getSum()" type="button" class="btn btn-secondary btn-lg btn-block">Get sum WITHOUT Web Worker</button>
+<br>
+<h3>Blocking indicator: {{stopwatch}}</h3>
+<br>
+<h1 style="color: blue">Result with Web Worker: {{sumWebWorker}}</h1>
+<h1 style="color: gray" >Result without Web Worker: {{sum}}</h1>
+
+
