@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "web-worker-demo-app": {
+    "web-workers-demo-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "web-worker-demo-app:build"
+            "browserTarget": "web-workers-demo-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "web-worker-demo-app:build:production"
+              "browserTarget": "web-workers-demo-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "web-worker-demo-app:build"
+            "browserTarget": "web-workers-demo-app:build"
           }
         },
         "test": {
@@ -117,14 +117,14 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "web-worker-demo-app:serve:production"
+              "devServerTarget": "web-workers-demo-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "web-worker-demo-app",
+  "defaultProject": "web-workers-demo-app",
   "cli": {
     "analytics": false
   }
